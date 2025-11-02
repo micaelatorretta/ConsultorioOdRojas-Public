@@ -1,0 +1,6 @@
+export const SortDirection = Object.freeze({
+    ASCENDING: 0,
+    DESCENDING: 1
+  });
+  
+export default SortDirection;

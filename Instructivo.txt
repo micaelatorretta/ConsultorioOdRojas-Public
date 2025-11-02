@@ -1,0 +1,17 @@
+Para un CRUD Convencional:
+	- Crear la entidad de dominio en Domain -> FuncionalUnits
+	- Crear las Reglas de negocio de la entidad en Domain -> FuncionalUnits -> Entidad -> Rules
+	- Crear la interfaz del repositorio especifico de la entidad en Domain -> FuncionalUnits -> Entidad -> Interfaces
+	- Agregar la configuracion de la entidad en Infrastructure -> EntitiesConfiguration
+	- Agregar el DbSet en Infrastructure -> PrincipalDBContext
+	- Ir a Portable -> FunctionalUnits y crear el DTO, las queries, commands y las responses.
+	- Ir a Application -> FunctionalUnits y crear los CommandHandler y los QueryHandler para la entidad.
+	- En Application -> Mappings agregar los mapeos
+	- En Application -> DependencyInjection agregar los CommandHandler y QueryHandler en la inyeccion de dependencia
+	- Ir a API -> Controllers y agregar el controlador para la entidad/funcionalidad
+	- Crear los Test de integración en el proyecto de Test 
+
+add-migration -name turnos -project Infrastructure
+update-database -project Infrastructure
+
+remove-migration -project Infrastructure

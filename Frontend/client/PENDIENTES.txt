@@ -1,0 +1,8 @@
+Ordenamiento en las grillas
+
+Busqueda aplicando filtros en la grilla
+
+Probar store una vez logueado el usuario y el manejo de rutas autorizadas
+
+Implementacion de notificaciones al usuario y de alerta de errores
+
